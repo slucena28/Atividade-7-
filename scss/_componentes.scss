@@ -1,0 +1,26 @@
+@use 'variaveis' as v;
+@use 'mixins' as m;
+
+.botao {
+  @include m.botao(v.$cor-primaria, white);
+
+  &--secundario {
+    @include m.botao(v.$cor-secundaria, white);
+  }
+}
+
+.card {
+  background: white;
+  padding: v.$espacamento;
+  margin-bottom: calc(v.$espacamento / 2); // operador
+  border-radius: 8px;
+
+  &__titulo {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  &__texto {
+    font-size: 0.9rem;
+  }
+}
