@@ -1,0 +1,13 @@
+@use 'variaveis' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: v.$fonte-principal;
+  background-color: v.$cor-fundo;
+  color: v.$cor-texto;
+}
