@@ -1,0 +1,16 @@
+// Mixin de botão
+@mixin botao($bg, $color) {
+  background-color: $bg;
+  color: $color;
+  padding: $espacamento;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+// Mixin de flex centralizado
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
