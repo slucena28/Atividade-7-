@@ -1,0 +1,16 @@
+@use 'variaveis' as v;
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background: v.$cor-primaria;
+  padding: v.$espacamento;
+
+  &__titulo {
+    color: white;
+    text-align: center;
+  }
+}
